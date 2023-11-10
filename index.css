@@ -1,0 +1,120 @@
+.frame-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: rgba(53, 49, 255, 0.91);
+    width: 898px;
+    height: 115px;
+  }
+  .home {
+    font-size: 40px;
+  }
+  .homequanlysinhvien {
+    position: absolute;
+    top: 39px;
+    left: 374px;
+    font-size: 36px;
+  }
+  .h-v-tn,
+  .im-00,
+  .lp-dh22dta,
+  .mn-hc-giao,
+  .thng-tin-sinh {
+    position: absolute;
+    top: 158px;
+    left: 484px;
+    color: var(--color-black);
+  }
+  .h-v-tn,
+  .im-00,
+  .lp-dh22dta,
+  .mn-hc-giao {
+    top: 274px;
+    left: 415px;
+  }
+  .im-00,
+  .lp-dh22dta,
+  .mn-hc-giao {
+    top: 329px;
+  }
+  .im-00,
+  .mn-hc-giao {
+    top: 383px;
+  }
+  .im-00 {
+    top: 438px;
+    display: inline-block;
+    width: 107px;
+    height: 33px;
+  }
+  .frame-inner,
+  .frame-item {
+    position: absolute;
+    top: 508px;
+    left: 380px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-mediumblue-100);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 137px;
+    height: 37px;
+  }
+  .frame-inner {
+    top: 570px;
+    left: 542px;
+  }
+  .lu {
+    position: absolute;
+    top: 574px;
+    left: 589px;
+  }
+  .frame-child1,
+  .rectangle-div {
+    position: absolute;
+    top: 508px;
+    left: 704px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-mediumblue-100);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 137px;
+    height: 37px;
+  }
+  .frame-child1 {
+    left: 542px;
+  }
+  .n-1-icon,
+  .sa,
+  .thm,
+  .xa {
+    position: absolute;
+    top: 512px;
+    left: 416px;
+  }
+  .n-1-icon,
+  .sa,
+  .xa {
+    left: 589px;
+  }
+  .n-1-icon,
+  .xa {
+    left: 754px;
+  }
+  .n-1-icon {
+    top: 205px;
+    left: 65px;
+    width: 231px;
+    height: 321px;
+    object-fit: cover;
+  }
+  .rectangle-parent {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 766px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  
