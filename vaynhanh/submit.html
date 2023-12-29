@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web phản hồi</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            font-size: 32px;
+            position:relative;
+            right: -30%;
+            display: flex;
+            flex-direction: column;
+        }
+        #email, #feedback {
+            font-size: 20px;
+        }
+       button{
+        font-size: 20px;
+       }
+    </style>
+      
+    </head>
+    <body class="container">
+        <h1 class="element">Vui lòng điền email và thắc mắc của bạn</h1>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+        <label for="email" class="element">Email:</label>
+        <input type="email" id="email" name="email" required class="in"><br>
+        <label for="feedback" class="element" class="in">Ý kiến phản hồi:</label>
+        <input type="text" id="feedback" name="feedback" required><br>
+        <button type="submit">Gửi phản hồi</button>
+    </form>
+    <a href="vaytien.html"> <button>Back</button></a>
+        </body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-31xl: 50px;
+  --font-size-13xl: 32px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray: rgba(45, 36, 4, 0.83);
+  --color-black: #000;
+  --color-darkgoldenrod-100: #aa8c20;
+  --color-darkslategray: #4c543c;
+
+  /* Border radiuses */
+  --br-6xl: 25px;
+}
