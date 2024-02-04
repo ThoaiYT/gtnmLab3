@@ -1,44 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .content .input-content {
+            padding: 5px;
+            margin: 10px;
+            display: flex;
+        }
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="rectangle-parent">
-      <div class="frame-child"></div>
-      <div class="homequanlysinhvien">
-        <span>
-        <a  <span    href="index.html" class="home"> HOME/ </span></a>
-         
-          <span>QUANLYSINHVIEN</span>
-        </span>
-      </div>
-      <div class="thng-tin-sinh">Thông tin sinh viên</div>
-      <div class="h-v-tn">Họ và tên: Nguyễn Bùi Hoàng Vũ</div>
-      <div class="lp-dh22dta">Lớp: DH22DTA</div>
-      <div class="mn-hc-giao">Môn học: Giao tiếp Người - Máy</div>
-      <div class="im-00">Điểm: 0.0</div>
-      <div class="frame-item"></div>
-      <div class="frame-inner"></div>
-      <div class="lu">Lưu</div>
-      <div class="rectangle-div"></div>
-      <div class="frame-child1"></div>
-      <div class="thm">Thêm</div>
-      <div class="sa">Sửa</div>
-      <div class="xa">Xóa</div>
-      <img
-        class="n-1-icon"
-        alt=""
-        src="./public/377323874-717445083624582-1119853470022174051-n-1@2x.png"
-      />
+        .header a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="#">QLSV</a></li>
+        </ul>
     </div>
-  </body>
+    <div class="content">
+        <div class="input-content">
+            <label for="">Họ và Tên:</label>
+            <input id="nhaphoten" type="text">
+            <label for="">Lớp: </label>
+            <input id="nhaplop" type="text">
+            <label for="">Điểm số: </label>
+            <input id="nhapdiem" type="text">
+        </div>
+        <div>
+            <button id="them">Thêm</button>
+            <button id="xoa" onclick="deleteLabel">Xóa</button>
+            <button id="sua">Sửa</button>
+        </div>
+        <div class="display-content">
+            <label id="hoten" for="">Họ và Tên: </label><p></p>
+            <label id="lop" for="">Lớp: </label><p></p>
+            <label id="diemso" for="">Điểm: </label>
+        </div>
+    </div>
+
+    <script>       
+        var inputHoten = document.getElementById("nhaphoten");
+        var labelHoten = document.getElementById("hoten");
+
+        var inputLop = document.getElementById("nhaplop");
+        var labelLop = document.getElementById("lop");
+        
+        var inputDiem = document.getElementById("nhapdiem");
+        var labelDiem = document.getElementById("diemso");
+
+        var button = document.getElementById("them");
+        var deletebtn = document.getElementById("xoa");
+        function deleteLabel(){
+            labelHoten.textContent="Họ và Tên: ";
+            labelDiem.textContent="Điểm: ";
+            labelLop.textContent="Lớp: ";
+        }
+        function updateLabel() {
+          labelHoten.textContent ="Họ và Tên: "+ inputHoten.value;
+          labelDiem.textContent ="Điểm: "+ inputDiem.value;
+          labelLop.textContent ="Lớp: "+ inputLop.value;
+        }
+        button.addEventListener("click", updateLabel);
+        deletebtn.addEventListener("click",deleteLabel);
+        input.addEventListener("keyup", updateLabel);
+      </script>
+</body>
 </html>

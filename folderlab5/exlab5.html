@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng điện thoại di động</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="title">Cửa hàng điện thoại di động</div>
+        <div class="menu">
+            <a href="/index.html"  > Trang chủ</a>
+            <a href="#contact"  >Liên hệ</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button>Tìm kiếm</button>
+        </div>
+      
+    </header>
+    <section>
+        <h2>Danh sách sản phẩm</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>Iphone 15 Pro Max</h3>
+                <img src="iphone15promax.jpg" alt="Iphone 15 Pro Max">
+                <ul>
+                    <li>Màn hình: 6.1 inch Dynamic Island, Super Retina XDR</li>
+                    <li>Bộ nhớ: 256GB</li>
+                    <li>Chip: Apple A17 Pro </li>
+                    
+                </ul>
+                <p>Giá: $2640</p>
+                <button id="themdt1">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <h3>Oppo FIND N3</h3>
+                <img src="oppofindn3.jpg" alt="Nokia 3310">
+                <ul>
+                    <li>Màn hình: 7.82 inch  </li>
+                    <li>Bộ nhớ: 512GB</li>
+                    <li>Chip: Snapdragon 8 Gen 2</li>
+                    
+                </ul>
+                <p>Giá: $2700</p>
+                <button id="themdt2">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <h3>Realme 2 Pro</h3>
+                <img src="realme2pro.jpg" alt="Realme 2 Pro">
+                <ul>
+                    <li>Màn hình: 6.3 inch, IPS LCD</li>
+                    <li>Bộ nhớ: 128GB</li>
+                    <li>Chip: Qualcom Snapdragon 660</li>
+                    
+                </ul>
+                <p>Giá: $220</p>
+                <button id="themdt3">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <h3>Samsung Galaxy A54</h3>
+                <img src="samsunga54.jpg" alt="Samsung Galaxy A54">
+                <ul>
+                    <li>Màn hình: 5.4 inch</li>
+                    <li>Bộ nhớ: 256GB</li>
+                    <li>Chip: Exynos 1380</li>
+                    
+                </ul>
+                <p>Giá: $560</p>
+                <button id="themdt4">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <h3>Samsung Galaxy S23</h3>
+                <img src="samsungs23.jpg" alt="Samsung Galaxy S23">
+                <ul>
+                    <li>Màn hình: 6.1 inch </li>
+                    <li>Bộ nhớ: 256GB</li>
+                    <li>Chip: Snapdragon 8 Gen 2</li>
+                    
+                </ul>
+                <p>Giá: $1100</p>
+                <button id="themdt5">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <h2>Giỏ hàng</h2>
+        <label id="sanpham"for="">Sản phẩm: </label> <p></p>
+        <label id="gia" for="">Giá: </label> <p></p>
+        <button id="thanhtoan">Thanh toán</button>
+    </section>
+    <footer>
+        <p>&copy; 2023 Cửa hàng điện thoại di động</p>
+    </footer>
+
+    <script>
+        var button1 = document.getElementById("themdt1");
+        var button2 = document.getElementById("themdt2");
+        var button3 = document.getElementById("themdt3");
+        var button4 = document.getElementById("themdt4");
+        var button5 = document.getElementById("themdt5");
+        var label = document.getElementById("sanpham");
+        var labelgia = document.getElementById("gia");
+        var thanhtoan=document.getElementById("thanhtoan");
+        var gia = 0;
+        function updateLabel1(){
+            label.textContent +=  " Iphone15 Pro Max,";
+            gia+=2640;
+            labelgia.textContent="Giá: "+gia+"$";
+        }
+        function updateLabel2(){
+            label.textContent +=  " Oppo FIND N3,";
+            gia+=2700;
+            labelgia.textContent="Giá: "+gia+"$";
+        }
+        function updateLabel3(){
+            label.textContent +=  " Realme 2 Pro,";
+            gia+=220;
+            labelgia.textContent="Giá: "+gia +"$";
+        }
+        function updateLabel4(){
+            label.textContent +=  " Samsung Galaxy A54,";
+            gia+=560;
+            labelgia.textContent="Giá: "+gia+"$";
+        }
+        function updateLabel5(){
+            label.textContent +=  " Samsung Galaxy S23,";
+            gia+=1100;
+            labelgia.textContent="Giá: "+gia+"$";
+        }
+        function tinhtien(){
+            label.textContent="Sản phẩm: ";
+            labelgia.textContent="Giá: 0$";
+            gia=0;
+        }
+
+        button1.addEventListener("click",updateLabel1);
+        button2.addEventListener("click",updateLabel2);
+        button3.addEventListener("click",updateLabel3);
+        button4.addEventListener("click",updateLabel4);
+        button5.addEventListener("click",updateLabel5);
+        thanhtoan.addEventListener("click",tinhtien);
+    </script>
+
+
+</body>
+</html>
